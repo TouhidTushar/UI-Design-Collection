@@ -1323,9 +1323,9 @@ header h1 {
       flex-wrap: wrap;
 }
 
-.cardWrapper {
+.productCardsA .cardWrapper {
   position: relative;
-  margin: 50px 0;
+  margin: 50px 25px;
   width: 255px;
   height: 340px;
   border-radius: 10px;
@@ -1348,72 +1348,72 @@ header h1 {
           filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
 
-.cardWrapper:nth-of-type(1) .imgBox::before {
+.productCardsA .cardWrapper:nth-of-type(1) .imgBox::before {
   background-color: yellowgreen;
 }
 
-.cardWrapper:nth-of-type(1) .detailsBox button {
+.productCardsA .cardWrapper:nth-of-type(1) .detailsBox button {
   background-color: yellowgreen;
 }
 
-.cardWrapper:nth-of-type(1) .detailsBox button:hover {
+.productCardsA .cardWrapper:nth-of-type(1) .detailsBox button:hover {
   background-color: #729e1a;
 }
 
-.cardWrapper:nth-of-type(1) .icon-cart:hover,
-.cardWrapper:nth-of-type(1) .icon-heart:hover {
+.productCardsA .cardWrapper:nth-of-type(1) .icon-cart:hover,
+.productCardsA .cardWrapper:nth-of-type(1) .icon-heart:hover {
   color: yellowgreen;
 }
 
-.cardWrapper:nth-of-type(2) .imgBox::before {
+.productCardsA .cardWrapper:nth-of-type(2) .imgBox::before {
   background-color: #ffff4b;
 }
 
-.cardWrapper:nth-of-type(2) .detailsBox button {
+.productCardsA .cardWrapper:nth-of-type(2) .detailsBox button {
   background-color: #ffff4b;
 }
 
-.cardWrapper:nth-of-type(2) .detailsBox button:hover {
+.productCardsA .cardWrapper:nth-of-type(2) .detailsBox button:hover {
   background-color: #caca3c;
 }
 
-.cardWrapper:nth-of-type(2) .icon-cart:hover,
-.cardWrapper:nth-of-type(2) .icon-heart:hover {
+.productCardsA .cardWrapper:nth-of-type(2) .icon-cart:hover,
+.productCardsA .cardWrapper:nth-of-type(2) .icon-heart:hover {
   color: #ffff4b;
 }
 
-.cardWrapper:nth-of-type(3) .imgBox::before {
+.productCardsA .cardWrapper:nth-of-type(3) .imgBox::before {
   background-color: #4879ff;
 }
 
-.cardWrapper:nth-of-type(3) .detailsBox button {
+.productCardsA .cardWrapper:nth-of-type(3) .detailsBox button {
   background-color: #4879ff;
 }
 
-.cardWrapper:nth-of-type(3) .detailsBox button:hover {
+.productCardsA .cardWrapper:nth-of-type(3) .detailsBox button:hover {
   background-color: #1b49c7;
 }
 
-.cardWrapper:nth-of-type(3) .icon-cart:hover,
-.cardWrapper:nth-of-type(3) .icon-heart:hover {
+.productCardsA .cardWrapper:nth-of-type(3) .icon-cart:hover,
+.productCardsA .cardWrapper:nth-of-type(3) .icon-heart:hover {
   color: #4879ff;
 }
 
-.cardWrapper:hover .detailsBox {
+.productCardsA .cardWrapper:hover .detailsBox {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
 
-.cardWrapper:hover .detailsBox p {
+.productCardsA .cardWrapper:hover .detailsBox p {
   opacity: 1;
 }
 
-.cardWrapper:hover .imgBox img {
+.productCardsA .cardWrapper:hover .imgBox img {
   -webkit-transform: scale(0.8, 0.8) rotateZ(8deg) translateY(-33%);
           transform: scale(0.8, 0.8) rotateZ(8deg) translateY(-33%);
 }
 
-.cardWrapper:hover .imgBox::before {
+.productCardsA .cardWrapper:hover .imgBox::before {
   width: 300px;
   height: 280px;
 }
@@ -1566,7 +1566,7 @@ header h1 {
   max-width: 300px;
   max-height: 250px;
   border-radius: 10px;
-  margin: 25px 0;
+  margin: 50px 25px;
   -webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
@@ -1765,6 +1765,7 @@ header h1 {
 
 .clearCardWrapper {
   position: relative;
+  margin: 50px 25px;
   width: 200px;
   height: 250px;
   background-color: #fff;

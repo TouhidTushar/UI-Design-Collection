@@ -992,9 +992,9 @@ header {
   flex-wrap: wrap;
 }
 
-.cardWrapper {
+.productCardsA .cardWrapper {
   position: relative;
-  margin: 50px 0;
+  margin: 50px 25px;
   width: 255px;
   height: 340px;
   border-radius: 10px;
@@ -1195,7 +1195,7 @@ header {
   max-width: 300px;
   max-height: 250px;
   border-radius: 10px;
-  margin: 25px 0;
+  margin: 50px 25px;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
   &:hover {
     .cardCoverFalse {
@@ -1344,6 +1344,7 @@ header {
 
 .clearCardWrapper {
   position: relative;
+  margin: 50px 25px;
   width: 200px;
   height: 250px;
   background-color: #fff;
