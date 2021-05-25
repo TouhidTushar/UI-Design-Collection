@@ -1,4 +1,4 @@
-//ripple buttons
+//ripple
 var val = 0;
 window.addEventListener("scroll", function () {
   val = window.scrollY;
