@@ -4,7 +4,7 @@ window.addEventListener("scroll", function () {
   val = window.scrollY;
 });
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".rippleBtn");
 buttons.forEach((btn) => {
   btn.addEventListener("click", function (e) {
     let x = e.clientX - e.target.offsetLeft;

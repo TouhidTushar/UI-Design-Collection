@@ -1306,6 +1306,193 @@ header h1 {
   z-index: 1;
 }
 
+.checkboxes-radio {
+  padding: 12vh 0 0 0;
+  min-height: 88vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.checkBoxes {
+  width: 320px;
+  height: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+
+.checkBoxes .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkBoxes .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkBoxes .container input:checked ~ .checkmark {
+  background-color: #059862;
+}
+
+.checkBoxes .container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkBoxes .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.checkBoxes .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkBoxes .container:hover input:checked ~ .checkmark {
+  background-color: #059862;
+}
+
+.checkBoxes .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.checkBoxes .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radioButtons {
+  width: 320px;
+  height: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+}
+
+.radioButtons .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.radioButtons .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioButtons .container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.radioButtons .container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.radioButtons .container .checkmark::after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.radioButtons .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.radioButtons .container:hover input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.radioButtons .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.radioButtons .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
 .productCardsA {
   padding: 12vh 0 0 0;
   min-height: 88vh;
@@ -1945,5 +2132,33 @@ header h1 {
 .shirtDetails .icon-cart:hover,
 .shirtDetails .icon-heart:hover {
   color: #000;
+}
+
+.banner {
+  padding: 12vh 0 0 0;
+  height: 88vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #000;
+}
+
+.banner div {
+  min-width: 300px;
+  max-width: 50%;
+  background-color: #000;
+}
+
+.banner img {
+  width: 70%;
 }
 /*# sourceMappingURL=styles.css.map */
